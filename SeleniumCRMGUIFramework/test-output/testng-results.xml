@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-09T10:48:28 IST" name="Default suite" finished-at="2026-01-09T10:48:32 IST" duration-ms="3693">
+    <groups>
+    </groups>
+    <test started-at="2026-01-09T10:48:28 IST" name="Default test" finished-at="2026-01-09T10:48:32 IST" duration-ms="3693">
+      <class name="practiceTestNG.TNG13Test">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:practiceTestNG.TNG13Test@6a78afa0]" started-at="2026-01-09T10:48:28 IST" name="configBS" finished-at="2026-01-09T10:48:28 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method signature="createContactTest()[pri:0, instance:practiceTestNG.TNG13Test@6a78afa0]" started-at="2026-01-09T10:48:28 IST" name="createContactTest" finished-at="2026-01-09T10:48:32 IST" duration-ms="3648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactTest -->
+        <test-method signature="createContactWithORG()[pri:0, instance:practiceTestNG.TNG13Test@6a78afa0]" started-at="2026-01-09T10:48:32 IST" name="createContactWithORG" finished-at="2026-01-09T10:48:32 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithORG -->
+        <test-method signature="createContactWithPhoneNumber()[pri:0, instance:practiceTestNG.TNG13Test@6a78afa0]" started-at="2026-01-09T10:48:32 IST" name="createContactWithPhoneNumber" finished-at="2026-01-09T10:48:32 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithPhoneNumber -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:practiceTestNG.TNG13Test@6a78afa0]" started-at="2026-01-09T10:48:32 IST" name="configAS" finished-at="2026-01-09T10:48:32 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- practiceTestNG.TNG13Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
