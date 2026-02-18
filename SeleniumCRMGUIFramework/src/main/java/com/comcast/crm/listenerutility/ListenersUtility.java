@@ -74,8 +74,6 @@ public class ListenersUtility implements ITestListener {
 	        String time = new Date().toString().replace(" ", "_").replace(":", "_");
 	        test.addScreenCaptureFromBase64String(filePath, testName+"_"+time);	
 	        test.log(Status.FAIL,result.getMethod().getMethodName()+"====ENDED===");
-
-	        
 	        
 //	        WebDriver driver = BaseClass.sdriver;
 //
@@ -89,6 +87,7 @@ public class ListenersUtility implements ITestListener {
 //	            );
 //	        } catch (IOException e) {
 //	            e.printStackTrace();
+	        
 	        }
 }
 

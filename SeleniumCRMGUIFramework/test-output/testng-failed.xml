@@ -3,9 +3,8 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practiceTestNG.TNG11Test">
+      <class name="com.comcast.crm.genericfileutilities.BaseClass">
         <methods>
-          <include name="createInvoiceWithContactTest"/>
           <include name="configAM"/>
           <include name="configBM"/>
           <include name="configBC"/>
@@ -14,7 +13,7 @@
           <include name="configAC"/>
           <include name="configAS"/>
         </methods>
-      </class> <!-- practiceTestNG.TNG11Test -->
+      </class> <!-- com.comcast.crm.genericfileutilities.BaseClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

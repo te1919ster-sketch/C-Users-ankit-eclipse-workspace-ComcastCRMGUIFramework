@@ -1,17 +1,23 @@
 package com.comcast.crm.genericfileutilities;
 
+import java.net.URL;
 import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.comcast.crm.databaseutility.DataBaseUtility;
@@ -54,17 +60,24 @@ public class BaseClass {
 		
 //		report.flush();
 	}
-	
+	//modifying the begfore class here
+	@Parameters({"browser", "platform"})	
 	@BeforeClass
-	public void configBC() throws Throwable {
+	public void configBC(String browser, String platform) throws Throwable {
 		System.out.println("launch browser");
 		String bwsr= fLib.getDataFromPropertiesFile("browser");
 		if (bwsr.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
+			ChromeOptions option= new ChromeOptions();
+			option.setPlatformName("window");
+			driver= new RemoteWebDriver(new URL("\"http://3.27.63.39:4444"), option);
 		} else if (bwsr.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
+			FirefoxOptions option= new FirefoxOptions();
+			option.setPlatformName("window");
+			driver= new RemoteWebDriver(new URL("\"http://3.27.63.39:4444"), option);
 		} else if (bwsr.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
+			EdgeOptions option= new EdgeOptions();
+			option.setPlatformName("window");
+			driver= new RemoteWebDriver(new URL("\"http://3.27.63.39:4444"), option);
 		} else {
 			driver = new ChromeDriver();
 		}
